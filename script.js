@@ -53,8 +53,8 @@ async function loadProjects() {
       repo: "https://github.com/justus123456/username.github.io/tree/main/todolist"
     },
     {
-      title: "Medical AI App (Flask)",
-      desc: "A web app built with Flask that uses AI to make medical reports on health. Run locally via terminal.",
+      title: "Static Website",
+      desc: "A clean and responsive static website built with HTML and CSS",
       image: "images/static.jpg",
       live: "projects/static/index.html",
       repo: "https://github.com/justus123456/username.github.io/tree/main/static"
