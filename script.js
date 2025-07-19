@@ -65,21 +65,7 @@ async function loadProjects() {
       image: "images/laund.jpg",
       live: "projects/laundry/views/index.html",
       repo: "https://github.com/justus123456/username.github.io/tree/main/laundry"
-    },
-    {
-      title: "To-do-list",
-      desc: "A sleek and intuitive to-do list app designed to help users organize tasks with ease. Includes add, delete, and mark-as-complete functionality.",
-      image: "images/hyydl9tirgztolmtbaf8.png",
-      live: "projects/todolist/list.html",
-      repo: "https://github.com/justus123456/username.github.io/tree/main/todolist"
-    },
-    {
-      title: "To-do-list",
-      desc: "A sleek and intuitive to-do list app designed to help users organize tasks with ease. Includes add, delete, and mark-as-complete functionality.",
-      image: "images/hyydl9tirgztolmtbaf8.png",
-      live: "projects/todolist/list.html",
-      repo: "https://github.com/justus123456/username.github.io/tree/main/todolist"
-    },
+    }
   ];
 
   const grid = document.getElementById('project-grid');
