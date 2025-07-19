@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- Updated paths with proper relative structure -->
+    <link rel="stylesheet" href="../public/fonts/css/all.css">
+    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="shortcut icon" 
+        href="../public/images/Laundry Logo design template - Made with PosterMyWall.png" 
+        type="image/x-icon">
+</head>
+<body>
+    <section>
+        <div class="login-container">
+            <h2>Admin Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" 
+                        required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="space">
+                        <input type="password" id="password" name="password" 
+                            required autocomplete="current-password">
+                        <button type="button" 
+                            class="btn btn-outline-primary fas fa-eye" 
+                            id="show" aria-label="Toggle password visibility">
+                        </button>
+                    </div>
+                </div>
+                <button type="submit">Login</button>
+                <p id="error-message" class="error-message" 
+                    aria-live="polite" role="alert"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="cp">
+            <p>&copy; 2024 <a href="../views/index.html">Idojuan Laundry and Dry Cleaning Services</a> all rights reserved</p>
+            <h4><a href="../views/index.html">Home</a></h4>
+        </div>
+    </footer>
+
+    <!-- Updated script path with module type -->
+    <script type="module" src="../scripts/auth/login.js"></script>
+</body>
+</html>

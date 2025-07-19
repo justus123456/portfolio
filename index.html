@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justus Idodo | Full Stack Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      defer></script>
+
+    <!-- Your Custom Script -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav-container">
+        <img src="images/jus.jpeg" alt="Justus Idodo" class="profile-pic" />
+        <h1 class="logo">Justus Idodo</h1>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger">☰</span>
+        </button>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <h2 class="hero-title">Crafting Sleek, Dynamic Web Experiences</h2>
+        <p class="hero-subtitle">Full-Stack Developer | React, Node.js &
+          APIs</p>
+        <a href="#projects" class="btn btn-primary ripple">Explore My Work</a>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="container about-grid">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              I'm a passionate developer who turns ideas into sleek, functional
+              digital experiences. I believe in clean, minimalist design — not
+              just for aesthetics, but to enhance clarity and impact. Whether
+              it's crafting responsive interfaces or building intelligent
+              backend systems, I strive to create tools that feel intuitive and
+              perform flawlessly.
+              With a growing command of technologies like React, Node.js, and
+              Flask, I enjoy building applications that are not only scalable
+              but truly centered around the user. Every project I take on is an
+              opportunity to solve real problems with thoughtful code and
+              creative vision.
+
+              Let’s build something meaningful — one line of code at a time.
+            </p>
+          </div>
+          <div class="about-img">
+            <img src="images/jus.jpeg" alt="Justus at work" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div id="project-grid" class="project-grid">
+            <!-- Dynamically loaded projects will appear here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-list">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">Express</span>
+            <span class="skill">MongoDB</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <form id="contact-form" class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea id="message" placeholder="Your Message" rows="5"
+              required></textarea>
+            <button type="submit" class="btn btn-primary ripple">Send
+              Message</button>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Justus Idodo. All rights reserved.</p>
+        <div class="socials">
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

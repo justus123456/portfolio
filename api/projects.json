@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Calculator",
+    "desc": "A basic simple calculator.",
+    "image": "images/calculator.jpg",
+    "live": "projects/calculator/calculator.html",
+    "repo": "https://github.com/justus123456/username.github.io/tree/main/calculator"
+  },
+  {
+    "title": "ToDo App",
+    "desc": "A sleek task management app.",
+    "image": "images/todo.jpg",
+    "live": "projects/todo/index.html",
+    "repo": "https://github.com/yourusername/todo-app"
+  }
+]

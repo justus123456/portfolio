@@ -1,0 +1,104 @@
+// Navigation toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navList = document.querySelector('.nav-list');
+navToggle.addEventListener('click', () => {
+  navList.classList.toggle('nav-open');
+});
+
+// Theme toggle
+const themeToggle = document.querySelector('.theme-toggle');
+const root = document.documentElement;
+const savedTheme = localStorage.getItem('theme') || 'dark';
+
+root.setAttribute('data-theme', savedTheme);
+themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+themeToggle.addEventListener('click', () => {
+  const current = root.getAttribute('data-theme');
+  const newTheme = current === 'light' ? 'dark' : 'light';
+  root.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+  themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+});
+
+// GSAP scroll animations
+gsap.utils.toArray('section').forEach(section => {
+  gsap.from(section, {
+    scrollTrigger: {
+      trigger: section,
+      start: 'top 80%',
+    },
+    opacity: 0,
+    y: 40,
+    duration: 0.8,
+    ease: 'power2.out'
+  });
+});
+
+// Load projects dynamically (mock version)
+async function loadProjects() {
+  const projects = [
+    {
+      title: "calculator",
+      desc: "A responsive and modern calculator for basic arithmetic operations.",
+      image: "images/callc.jpg",
+      live: "projects/calculator/calculator.html",
+      repo: "https://github.com/justus123456/username.github.io/tree/main/calculator"
+    },
+    {
+      title: "To-do-list",
+      desc: "A sleek and intuitive to-do list app designed to help users organize tasks with ease. Includes add, delete, and mark-as-complete functionality.",
+      image: "images/lis.jpg",
+      live: "projects/todolist/list.html",
+      repo: "https://github.com/justus123456/username.github.io/tree/main/todolist"
+    },
+    {
+      title: "Medical AI App (Flask)",
+      desc: "A web app built with Flask that uses AI to make medical reports on health. Run locally via terminal.",
+      image: "images/static.jpg",
+      live: "projects/static/index.html",
+      repo: "https://github.com/justus123456/username.github.io/tree/main/static"
+    },
+    {
+      title: "laundry",
+      desc: "A smart laundry management system for tracking and scheduling services.",
+      image: "images/laund.jpg",
+      live: "projects/laundry/views/index.html",
+      repo: "https://github.com/justus123456/username.github.io/tree/main/laundry"
+    },
+    {
+      title: "To-do-list",
+      desc: "A sleek and intuitive to-do list app designed to help users organize tasks with ease. Includes add, delete, and mark-as-complete functionality.",
+      image: "images/hyydl9tirgztolmtbaf8.png",
+      live: "projects/todolist/list.html",
+      repo: "https://github.com/justus123456/username.github.io/tree/main/todolist"
+    },
+    {
+      title: "To-do-list",
+      desc: "A sleek and intuitive to-do list app designed to help users organize tasks with ease. Includes add, delete, and mark-as-complete functionality.",
+      image: "images/hyydl9tirgztolmtbaf8.png",
+      live: "projects/todolist/list.html",
+      repo: "https://github.com/justus123456/username.github.io/tree/main/todolist"
+    },
+  ];
+
+  const grid = document.getElementById('project-grid');
+  projects.forEach(p => {
+    const card = document.createElement('div');
+    card.className = 'project-card';
+    card.innerHTML = `
+      <img src="${p.image}" alt="${p.title}">
+      <div class="card-content">
+        <h3>${p.title}</h3>
+        <p>${p.desc}</p>
+        <div class="card-links">
+          <a href="${p.live}" class="btn ripple">Live</a>
+          <a href="${p.repo}" class="btn ripple">Code</a>
+        </div>
+      </div>
+    `;
+    grid.append(card);
+  });
+}
+
+window.addEventListener('DOMContentLoaded', loadProjects);

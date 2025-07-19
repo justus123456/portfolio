@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>MedQ&A</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Ask a Medical Question</h2>
+    <form method="post" autocomplete="off">
+        <input type="text" name="question" placeholder="Enter your medical question" required />
+        <button type="submit">Get Answer</button>
+    </form>
+    
+    {% if answer %}
+        <h3>Answer:</h3>
+        <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>

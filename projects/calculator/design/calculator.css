@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* border design */
+.bord{
+    border: 1px solid transparent;
+    margin: 25px auto;
+    width: 350px;
+    height: 410px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px 4px rgb(207, 206, 206);
+    
+}
+/* Text design */
+h5{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family:cursive;
+    text-align: end;
+    padding-top: 3px;
+    
+}
+/* Buttons design */
+.one{
+    width: 70px;
+    height: 40px;
+    border: 1px solid ;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.ones{
+    width: 70px;
+    height: 40px;
+    border: 1px solid ;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.ones:hover{
+    background-color: gray;
+}
+#opp{
+    width: 70px;
+    height: 40px;
+    border: 1px solid ;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 12px;
+    color: wheat;
+    background-color: rgb(67, 119, 67);
+    cursor: pointer;
+}
+#opp:hover{
+    background-color: rgb(7, 97, 7);
+}
+#on{
+    width: 70px;
+    height: 40px;
+    border: 1px solid ;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 12px;
+    background-color: rgb(42, 42, 252);
+    color: white;
+    cursor: pointer;
+}
+#on:hover{
+    background-color:rgb(16, 16, 156);
+}
+#oned{
+    width: 70px;
+    height: 40px;
+    border: 1px solid ;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 12px;
+    background-color: rgb(235, 85, 85);
+    color: white;
+    cursor: pointer;
+}
+#oned:hover{
+    background-color: rgb(180, 41, 41);
+}
+/* Screen display design */
+.screen{
+    border: 1px solid;
+    border-radius: 5px;
+    width: 310px;
+    height: 70px;
+    margin-left: 18px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 45px;
+    
+}

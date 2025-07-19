@@ -1,0 +1,124 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+}
+/* Styling for the main section */
+.sect {
+    border: 3px solid transparent;
+    margin: 120px auto; /* Center the section horizontally */
+    max-width: 800px; /* Ensure the section doesn’t stretch too wide */
+    height: auto; /* Allow height to adjust based on content */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(214, 238, 157, 0.8); /* Slightly increased shadow for better emphasis */
+    background-color: #fff; /* Added background color for better readability */
+    padding: 20px; /* Added padding for spacing inside the section */
+}
+
+/* Styling for the header */
+.firt {
+    text-align: center;
+    font-size: 24px; /* Slightly increased font size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-weight: 300; /* Changed to a more readable font weight */
+    color: #acff2f; /* Use a more readable color */
+    margin-bottom: 20px; /* Added margin below header */
+}
+
+/* Styling for the form container */
+.next {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+}
+
+/* Styling for the form label */
+.next label {
+    font-size: 18px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #333; 
+}
+
+/* Styling for the input field and submit button */
+.form-group {
+    display: flex; /* Arrange input and button in a row */
+    gap: 10px; /* Space between input and button */
+    align-items: center; /* Center align items vertically */
+    width: 100%; /* Full width for responsiveness */
+}
+
+/* Styling for the input field */
+#idk {
+    height: 40px; /* Increased height for better usability */
+    width: 100%; /* Full width with padding for better responsiveness */
+    max-width: 300px; /* Set a maximum width */
+    border: 1px solid #4caf50; /* Changed to a more standard green color */
+    border-radius: 5px;
+    padding: 0 15px; /* Padding on both sides */
+    font-size: 16px; /* Slightly smaller font size */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s; /* Smooth transition effect */
+}
+
+/* Focus effect for the input field */
+#idk:focus {
+    border-color: #388e3c; /* Change border color on focus */
+}
+
+/* Styling for the submit button */
+.but {
+    height: 40px; /* Increased height for better usability */
+    width: 120px; /* Fixed width for the button */
+    color: #fff;
+    font-size: 16px; /* Slightly smaller font size */
+    border: none; /* Remove default border */
+    background-color: #f83b3b; /* Use a more consistent red color */
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+/* Hover effect for the submit button */
+.but:hover {
+    background-color: #d32f2f; /* Darker red for hover state */
+    transform: scale(1.05); /* Slightly scale up button on hover */
+}
+
+/* Focus effect for the button */
+.but:focus {
+    outline: none; /* Remove default outline */
+}
+
+/* Styling for the additional button below */
+.buts {
+    height: 40px;  
+    width: 250px; 
+    color: #fff;
+    font-size: 16px; 
+    border: 1px solid transparent; 
+    background-color: #f83b3b; 
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px; 
+}
+
+/* Hover effect for the additional button */
+.buts:hover {
+    background-color: #d32f2f; /* Darker red for hover state */
+    transform: scale(1.05); /* Slightly scale up button on hover */
+}
+
+/* Focus effect for the additional button */
+.buts:focus {
+    outline: none; /* Remove default outline */
+}
