@@ -5,21 +5,38 @@ navToggle.addEventListener('click', () => {
   navList.classList.toggle('nav-open');
 });
 
-// Theme toggle
-const themeToggle = document.querySelector('.theme-toggle');
-const root = document.documentElement;
-const savedTheme = localStorage.getItem('theme') || 'dark';
 
-root.setAttribute('data-theme', savedTheme);
-themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+  // Elements
+  const themeToggle = document.querySelector('.theme-toggle');
+  const root = document.documentElement;
+  const hero = document.querySelector('.hero');
 
-themeToggle.addEventListener('click', () => {
-  const current = root.getAttribute('data-theme');
-  const newTheme = current === 'light' ? 'dark' : 'light';
-  root.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-  themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-});
+  // Persisted theme (default to dark)
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+
+  // Hero background URLs
+  const lightHeroBg = "url('images/25956.jpg') center/cover no-repeat";
+  const darkHeroBg  = "url('images/nubelson-fernandes-iE71-TMrrkE-unsplash.jpg') center/cover no-repeat";
+
+  // Initialize theme and hero bg on page load
+  root.setAttribute('data-theme', savedTheme);
+  themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+  hero.style.background = `var(--bg-alt) ${savedTheme === 'dark' ? darkHeroBg : lightHeroBg}`;
+
+  // Toggle handler
+  themeToggle.addEventListener('click', () => {
+    // Flip theme
+    const current = root.getAttribute('data-theme');
+    const newTheme = current === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+
+    // Update hero background
+    hero.style.background = `var(--bg-alt) ${newTheme === 'dark' ? darkHeroBg : lightHeroBg}`;
+  });
+
+
 
 // GSAP scroll animations
 gsap.utils.toArray('section').forEach(section => {
