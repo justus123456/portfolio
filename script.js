@@ -15,7 +15,7 @@ navToggle.addEventListener('click', () => {
   const savedTheme = localStorage.getItem('theme') || 'dark';
 
   // Hero background URLs
-  const lightHeroBg = "url('images/25956.jpg') center/cover no-repeat";
+  const lightHeroBg = "url('images/fernando-hernandez-JdoofvUDUwc-unsplash.jpg') center/cover no-repeat";
   const darkHeroBg  = "url('images/nubelson-fernandes-iE71-TMrrkE-unsplash.jpg') center/cover no-repeat";
 
   // Initialize theme and hero bg on page load
