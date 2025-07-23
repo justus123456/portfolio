@@ -39,6 +39,7 @@ html, body {
   color: var(--text-primary);
   line-height: 1.6;
   transition: var(--transition);
+  text-transform: capitalize;
 }
 a {
   color: var(--accent);
@@ -135,8 +136,9 @@ img {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 8rem 0;
+  min-width: 100vw;
   min-height: 100vh;
-  background: var(--bg-alt) url('images/james-harrison-vpOeXr5wmR4-unsplash.jpg') no-repeat;
+  background: var(--bg-alt) url('images/') no-repeat;
   object-fit:scale-down;
   background-size: cover;
   position: relative;
